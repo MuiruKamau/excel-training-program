@@ -9,7 +9,7 @@ interface HeroProps {
 export function Hero({ onViewProgrammes }: HeroProps) {
   return (
     <section className="bg-gradient-to-br from-blue-50 to-indigo-50 py-12 md:py-16 px-4">
-      <div className="max-w-4xl mx-auto text-center">
+      <div className="max-w-4xl w-full mx-auto text-center">
         <div className="inline-block bg-blue-600 text-white px-4 py-2 rounded-full text-sm font-semibold mb-6">
           Professional Excel Training
         </div>
@@ -25,7 +25,7 @@ export function Hero({ onViewProgrammes }: HeroProps) {
         </p>
 
         {/* Location & Logistics - Centered Grid */}
-        <div className="bg-white rounded-lg p-6 shadow-md mb-8 inline-block text-left max-w-2xl w-full">
+        <div className="bg-white rounded-lg p-6 shadow-md mb-8 block max-w-2xl w-full mx-auto text-left">
           <div className="grid md:grid-cols-2 gap-6">
             <div className="flex items-start gap-3">
               <MapPin className="w-5 h-5 text-blue-600 mt-1 flex-shrink-0" />
