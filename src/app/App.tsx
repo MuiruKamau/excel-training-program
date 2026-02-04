@@ -111,6 +111,7 @@ export default function App() {
               <h3 className="text-lg font-bold mb-4">Contact</h3>
               <p className="text-gray-400">Email: crispusmk@outlook.com</p>
               <p className="text-gray-400">Email: bella.kamau@outlook.com</p>
+              <p className="text-gray-400">Phone: +254 796 868984</p>
             </div>
             <div>
               <h3 className="text-lg font-bold mb-4">Location</h3>
