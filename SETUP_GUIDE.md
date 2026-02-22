@@ -128,7 +128,7 @@ All registration submissions are stored with:
 
 ### Current Implementation
 The system logs email content to the console and stores registrations in the database. Email content is prepared for:
-- crispusmk@outlook.com
+- Harietwambui@outlook.com
 - bella.kamau@outlook.com
 
 ### Future Enhancement
@@ -208,7 +208,7 @@ For technical support or questions about this implementation:
 - Consult Supabase documentation for backend features
 
 For programme enquiries:
-- Email: crispusmk@outlook.com
+- Email: Harietwambui@outlook.com
 - Email: bella.kamau@outlook.com
 
 ---
@@ -233,7 +233,7 @@ Built with Figma Make - a rapid prototyping tool for web applications.
 **Location**: Delta Corner, Westlands, Nairobi, Kenya
 
 **Contact**: 
-- crispusmk@outlook.com
+- Harietwambui@outlook.com
 - bella.kamau@outlook.com
 
 **Website Purpose**: Lead generation and programme information (not e-commerce)

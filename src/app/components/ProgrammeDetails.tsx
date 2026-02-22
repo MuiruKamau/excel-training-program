@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { Button } from "@/app/components/ui/button";
 import {
   Card,
@@ -150,6 +151,42 @@ const programmeData = {
 
 export function ProgrammeDetails({ programme, onBack }: ProgrammeDetailsProps) {
   const data = programmeData[programme as keyof typeof programmeData];
+
+  useEffect(() => {
+    if (data) {
+      const seoTitles: { [key: string]: string } = {
+        beginner:
+          "Beginner Financial Modelling Course Kenya | ExelGuru — KES 25,000",
+        intermediate:
+          "IFRS Financial Modelling Course Nairobi | ExelGuru — KES 50,000",
+        expert:
+          "Expert Real Estate Fund Modelling Course Kenya | ExelGuru — KES 100,000",
+      };
+
+      const originalTitle = document.title;
+      document.title = seoTitles[programme] || data.title;
+
+      // Update meta description if it exists
+      const metaDescription = document.querySelector(
+        'meta[name="description"]',
+      );
+      const originalDescription = metaDescription?.getAttribute("content");
+
+      if (metaDescription) {
+        metaDescription.setAttribute(
+          "content",
+          `${seoTitles[programme]}. ${data.objective}`,
+        );
+      }
+
+      return () => {
+        document.title = originalTitle;
+        if (metaDescription && originalDescription) {
+          metaDescription.setAttribute("content", originalDescription);
+        }
+      };
+    }
+  }, [programme, data]);
 
   if (!data) {
     return null;

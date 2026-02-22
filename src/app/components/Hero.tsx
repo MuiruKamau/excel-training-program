@@ -14,14 +14,12 @@ export function Hero({ onViewProgrammes }: HeroProps) {
           Professional Excel Training
         </div>
         <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-          Real Estate Financial Modelling & IFRS Reporting
+          Excel Training Programme — Real Estate Financial Modelling & IFRS
+          Reporting
         </h1>
         <p className="text-xl text-gray-700 mb-8 leading-relaxed">
-          A hands-on Excel training programme focused on real estate financial
-          modelling and the preparation of IFRS-compliant financial statements.
-          Designed to equip you with practical, industry-relevant modelling
-          skills used by real estate developers, investment firms, and REIT
-          managers.
+          Hands-on training by Crispus Kamau, AssocRICS. Three levels from KES
+          25,000. Delta Corner, Westlands, Nairobi.
         </p>
 
         {/* Location & Logistics - Centered Grid */}

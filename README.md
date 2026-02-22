@@ -66,7 +66,7 @@ This will display all submitted registrations including:
 ## Contact
 
 For enquiries about the programme:
-- **Email**: crispusmk@outlook.com
+- **Email**: Harietwambui@outlook.com
 - **Email**: bella.kamau@outlook.com
 
 ## Technical Notes
@@ -74,7 +74,7 @@ For enquiries about the programme:
 ### Form Submissions
 All registration form submissions are:
 - Stored in the Supabase database
-- Logged for email notification (notifications would be sent to crispusmk@outlook.com and bella.kamau@outlook.com)
+- Logged for email notification (notifications would be sent to Harietwambui@outlook.com and bella.kamau@outlook.com)
 
 ### Backend
 The website uses:

@@ -109,8 +109,9 @@ export default function App() {
             </div>
             <div>
               <h3 className="text-lg font-bold mb-4">Contact</h3>
-              <p className="text-gray-400">Email: crispusmk@outlook.com</p>
+              <p className="text-gray-400">Email: Harietwambui@outlook.com</p>
               <p className="text-gray-400">Email: bella.kamau@outlook.com</p>
+              <p className="text-gray-400">Phone: +254 798 884 016</p>
               <p className="text-gray-400">Phone: +254 796 868984</p>
             </div>
             <div>
@@ -120,6 +121,10 @@ export default function App() {
             </div>
           </div>
           <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+            <p className="mb-2">
+              Trainer: Crispus Kamau, AssocRICS &middot; Delta Corner, Westlands,
+              Nairobi, Kenya &middot; exelguru.com
+            </p>
             <p>
               &copy; {new Date().getFullYear()} Excel Training Programme. All
               rights reserved.

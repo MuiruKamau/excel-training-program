@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useEffect } from "react";
 import { Button } from "@/app/components/ui/button";
 import {
   Card,
@@ -16,7 +16,6 @@ import {
   TableRow,
 } from "@/app/components/ui/table";
 import { Loader2, RefreshCw } from "lucide-react";
-import { projectId, publicAnonKey } from "../../../utils/supabase/info";
 import { toast } from "sonner";
 
 interface Registration {
@@ -32,34 +31,11 @@ interface Registration {
 }
 
 export function AdminDashboard() {
-  const [registrations, setRegistrations] = useState<Registration[]>([]);
-  const [isLoading, setIsLoading] = useState(true);
+  const registrations: Registration[] = [];
+  const isLoading = false;
 
   const fetchRegistrations = async () => {
-    setIsLoading(true);
-    try {
-      const response = await fetch(
-        `https://${projectId}.supabase.co/functions/v1/make-server-1e3b0733/registrations`,
-        {
-          method: "GET",
-          headers: {
-            Authorization: `Bearer ${publicAnonKey}`,
-          },
-        },
-      );
-
-      if (!response.ok) {
-        throw new Error("Failed to fetch registrations");
-      }
-
-      const data = await response.json();
-      setRegistrations(data.registrations || []);
-    } catch (error) {
-      console.error("Error fetching registrations:", error);
-      toast.error("Failed to load registrations");
-    } finally {
-      setIsLoading(false);
-    }
+    toast.info("Admin Dashboard data is now managed via Google Sheets.");
   };
 
   useEffect(() => {
@@ -164,6 +140,17 @@ export function AdminDashboard() {
             <div className="mt-6 bg-blue-50 border border-blue-200 rounded-lg p-4">
               <p className="text-sm text-gray-700">
                 <strong>Total Registrations:</strong> {registrations.length}
+              </p>
+            </div>
+
+            <div className="mt-8 pt-8 border-t border-gray-200 text-center text-gray-500 text-sm">
+              <p>
+                Trainer: Crispus Kamau, AssocRICS &middot; Delta Corner,
+                Westlands, Nairobi, Kenya &middot; exelguru.com
+              </p>
+              <p className="mt-2">
+                &copy; {new Date().getFullYear()} Excel Training Programme. All
+                rights reserved.
               </p>
             </div>
           </CardContent>
