@@ -4,6 +4,7 @@ import { ProgrammeCards } from "@/app/components/ProgrammeCards";
 import { ProgrammeDetails } from "@/app/components/ProgrammeDetails";
 import { AdminDashboard } from "@/app/components/AdminDashboard";
 import { TrainerProfile } from "@/app/components/TrainerProfile";
+import { LocationSection } from "@/app/components/LocationSection";
 import { Toaster } from "@/app/components/ui/sonner";
 
 export default function App() {
@@ -91,6 +92,7 @@ export default function App() {
             <Hero onViewProgrammes={scrollToProgrammes} />
             <ProgrammeCards onSelectProgramme={handleSelectProgramme} />
             <TrainerProfile />
+            <LocationSection />
           </>
         )}
       </main>
@@ -109,10 +111,18 @@ export default function App() {
             </div>
             <div>
               <h3 className="text-lg font-bold mb-4">Contact</h3>
-              <p className="text-gray-400">Email: Harietwambui@outlook.com</p>
-              <p className="text-gray-400">Email: bella.kamau@outlook.com</p>
-              <p className="text-gray-400">Phone: +254 798 884 016</p>
-              <p className="text-gray-400">Phone: +254 796 868984</p>
+              <p className="text-gray-400">
+                Email: <a href="mailto:Harietwambui@outlook.com" className="hover:text-blue-400 transition-colors">Harietwambui@outlook.com</a>
+              </p>
+              <p className="text-gray-400">
+                Email: <a href="mailto:bella.kamau@outlook.com" className="hover:text-blue-400 transition-colors">bella.kamau@outlook.com</a>
+              </p>
+              <p className="text-gray-400">
+                Phone: <a href="tel:+254798884016" className="hover:text-blue-400 transition-colors">+254 798 884 016</a>
+              </p>
+              <p className="text-gray-400">
+                Phone: <a href="tel:+254796868984" className="hover:text-blue-400 transition-colors">+254 796 868984</a>
+              </p>
             </div>
             <div>
               <h3 className="text-lg font-bold mb-4">Location</h3>
