@@ -22,9 +22,9 @@ interface ProgrammeDetailsProps {
 
 const programmeData = {
   beginner: {
-    title: "Beginner – Financial Modelling Foundations",
+    title: "Beginner: Excel & Modelling Fundamentals",
     objective:
-      "Build a clean, structured financial model from scratch and calculate basic investment returns (IRR, NPV and Yield) using professional modelling standards applied in real estate and investment analysis.",
+      "Build a clean, structured financial model from scratch and calculate basic investment returns (IRR, NPV and Yield) using professional modelling standards. This Excel training for real estate Nairobi covers foundations for beginners building residential/commercial projects.",
     whoFor: [
       "Students and recent graduates",
       "Analysts with limited modelling experience",
@@ -62,9 +62,9 @@ const programmeData = {
     ],
   },
   intermediate: {
-    title: "Intermediate – IFRS Financial Modelling",
+    title: "Intermediate: Real Estate IFRS Modelling",
     objective:
-      "Produce fully linked, IFRS-compliant financial statements (Income Statement, Cash Flow Statement and Balance Sheet) for an operating investment or real estate project.",
+      "Produce fully linked, IFRS-compliant financial statements (Income Statement, Cash Flow Statement and Balance Sheet) for an operating investment or real estate project. Our IFRS training Kenya is part of our leading financial modelling Kenya curriculum.",
     whoFor: [
       "Analysts with 1–5 years' experience",
       "Accountants moving into modelling roles",
@@ -102,7 +102,7 @@ const programmeData = {
     ],
   },
   expert: {
-    title: "Expert – Fund, Valuation, Debt & Tax Modelling",
+    title: "Expert: Advanced Financial Modelling Kenya",
     objective:
       "Build a deal-ready asset or fund financial model incorporating valuation, tax and investor return analysis suitable for investment committee, transaction and capital-raising decisions.",
     whoFor: [
@@ -143,8 +143,9 @@ const programmeData = {
     deliverables: [
       "Full asset-level or fund-level financial model",
       "Integrated development, operating, debt, valuation and tax modules",
-      "Robust valuation model (DCF and capitalisation-based)",
+      "Robust valuation model (DCF valuation and capitalisation-based)",
       "Investor-grade and lender-grade reporting outputs",
+      "Comprehensive real estate finance training materials and modelling templates",
     ],
   },
 };
@@ -266,9 +267,15 @@ export function ProgrammeDetails({ programme, onBack }: ProgrammeDetailsProps) {
                   </CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-lg text-gray-700 leading-relaxed">
+                  <p className="text-lg text-gray-700 leading-relaxed mb-4">
                     {data.build}
                   </p>
+                  <div className="bg-blue-50 p-4 rounded-lg">
+                    <p className="text-sm font-semibold text-blue-900">Training Schedule:</p>
+                    <p className="text-sm text-blue-800">
+                      Light refreshments included; lunch break provided.
+                    </p>
+                  </div>
                 </CardContent>
               </Card>
             </TabsContent>

@@ -17,7 +17,7 @@ const programmes = [
   {
     id: "beginner",
     title: "Beginner",
-    subtitle: "Financial Modelling Foundations",
+    subtitle: "Beginner: Excel & Modelling Fundamentals",
     description:
       "Build a clean, structured financial model from scratch and calculate basic investment returns (IRR, NPV and Yield) using professional modelling standards.",
     priceBase: "20,000",
@@ -36,7 +36,7 @@ const programmes = [
   {
     id: "intermediate",
     title: "Intermediate",
-    subtitle: "IFRS Financial Modelling",
+    subtitle: "Intermediate: Real Estate IFRS Modelling",
     description:
       "Produce fully linked, IFRS-compliant financial statements (Income Statement, Cash Flow Statement and Balance Sheet) for an operating investment or real estate project.",
     priceBase: "40,000",
@@ -55,7 +55,7 @@ const programmes = [
   {
     id: "expert",
     title: "Expert",
-    subtitle: "Fund, Valuation, Debt & Tax Modelling",
+    subtitle: "Expert: Advanced Financial Modelling Kenya",
     description:
       "Build a deal-ready asset or fund financial model incorporating valuation, tax and investor return analysis suitable for investment committee, transaction and capital-raising decisions.",
     priceBase: "80,000",
@@ -82,8 +82,7 @@ export function ProgrammeCards({ onSelectProgramme }: ProgrammeCardsProps) {
             Choose Your Programme
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Select the training tier that matches your experience level and
-            career goals
+            Select the training tier that matches your experience level and career goals
           </p>
         </div>
 
